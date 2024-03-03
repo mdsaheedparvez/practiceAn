@@ -1,0 +1,45 @@
+.content {
+    padding-top: 10px;
+  }
+  .row {
+    display: flex;
+    gap: 10px;
+  
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  
+  .action {
+    padding: 0px 25px 20px;
+    button {
+      flex: 1;
+    }
+
+    
+  }
+
+ .space{
+    padding-left: 520px;
+
+ }
+
+ .custom_datepicker{
+
+    width: 215px;
+ }
+
+
+ .newspace{
+    margin-top: 10px;
+   padding-left: 660px;
+ }
+
+ .custom_narration{
+    width: 432px;
+ }
+
+ .address{   
+    width: 430px;
+
+ }

@@ -1,0 +1,40 @@
+<div mat-dialog-title class="newspace">
+    <h1>Add Employee</h1>
+</div>
+<form [formGroup]="myform">
+    <div mat-dialog-content class="content">
+        <table formArrayName="addEmpdetails">
+            <thead>
+              <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Email Id</th>
+                      <th><button type="button" mat-raised-button class="btn-field" color="primary"(click)="addEmp()"> Add</button></th>
+              </tr>
+            </thead>
+            <tbody >
+                <tr  *ngFor="let det of getDetails().controls; let i=index"  [formGroupName]="i">
+                <td>
+                <mat-form-field appearance="outline" class="spc-field">
+                    <mat-label>First name</mat-label>
+                    <input matInput type="text" placeholder="Prasant" formControlName="firstname" >
+                </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field appearance="outline" class="spc-field">
+                        <mat-label>Last name</mat-label>
+                        <input matInput type="text" placeholder="Meher" formControlName="lastName">
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field appearance="outline" class="spc-field">
+                        <mat-label>Email Id</mat-label>
+                        <input matInput type="text" placeholder="" formControlName="email">
+                    </mat-form-field>
+                </td>
+                <td><button type="button" mat-raised-button class="btn-field" color="red" (click)="deleteEmp(i)"> Delete</button></td>
+                  </tr>  
+            </tbody>
+        </table>
+     </div>
+</form>

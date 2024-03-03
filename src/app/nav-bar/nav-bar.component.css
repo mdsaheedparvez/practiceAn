@@ -1,0 +1,23 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+  .spaced-button {
+    margin-right: 10px; /* Add space to the right */
+    /* or */
+    padding-right: 10px; /* Add padding to the right */
+  }
+
+  .whitebcgrnd{
+    background-color: white;
+    color: White;
+  }
+
+  .my-width {
+    width: 24%;
+    text-align-last: right;
+  }
+  .ff {
+    text-align-last: right;
+  }
